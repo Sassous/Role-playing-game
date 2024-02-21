@@ -114,24 +114,24 @@ function goTown(){
     //Pass in only the first element of the locations array by adding [0] at the end of the variable.
     update(locations[0]);
     button4.style.display = "none";
-    button3.style.backgroundColor = "transparent";
-    button2.style.backgroundColor = "transparent";
-    button1.style.backgroundColor = "transparent";
+    button3.style.backgroundColor = "var(--middle-purple)";
+    button2.style.backgroundColor = "var(--middle-purple)";
+    button1.style.backgroundColor = "var(--middle-purple)";
     
 }
 function goStore(){
     update(locations[1]);
     button4.style.display = "block";
-    button3.style.backgroundColor = "#072B30";
-    button2.style.backgroundColor = "transparent";
-    button1.style.backgroundColor = "transparent";
+    button3.style.backgroundColor = "var(--dark-purple)";
+    button2.style.backgroundColor = "var(--middle-purple)";
+    button1.style.backgroundColor = "var(--middle-purple)";
 };
 function goCave() {
     update(locations[2]);
     button4.style.display = "none";
-    button3.style.backgroundColor = "#072B30";
-    button2.style.backgroundColor = "transparent";
-    button1.style.backgroundColor = "transparent";
+    button3.style.backgroundColor = "var(--dark-purple)";
+    button2.style.backgroundColor = "var(--middle-purple)";
+    button1.style.backgroundColor = "var(--middle-purple)";
   }
 
   
@@ -197,7 +197,7 @@ function fightDragon() {
     fighting = 2;
     goFight();
     button4.style.display = "none";
-    button3.style.backgroundColor = "#072B30";
+    button3.style.backgroundColor = "var(--dark-purple)";
 }
 function goFight(){
     update(locations[3]);
@@ -249,8 +249,8 @@ function defeatMonster() {
 function lose(){
     update(locations[5]);
     button4.style.display = "none";
-    button2.style.backgroundColor = "#072B30";
-    button1.style.backgroundColor = "#072B30";
+    button2.style.backgroundColor = "var(--dark-purple)";
+    button1.style.backgroundColor = "var(--dark-purple)";
 }
 function winGame(){
     update(locations[6]);
